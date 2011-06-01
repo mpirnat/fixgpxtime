@@ -1,5 +1,9 @@
+What
+----
 A little utility for adjusting the timestamps in GPX files.
 
+Why
+---
 RunKeeper is great for generating GPX logs of where you've been (eg, on a
 photowalk), but lies when it writes the timestamps.  It uses the local time,
 formatted in a way that asserts it was UTC.  But the next software down the line
@@ -7,3 +11,20 @@ doesn't know that, trusts the UTC timestamps, and now you can't geotag your
 photos.
 
 This fixes that.
+
+State of the Universe
+---------------------
+
+Requires dateutil for convenience.
+
+Crappy things that I'm too lazy to fix right now:
+
+ * hard-coded inputs
+ * hard-coded outputs
+ * hard-coded time adjustment (4 hours, UTC minus EDT)
+ * no tests
+ * not easy_install-able
+ * not pip install-able
+ * not in PyPI/Cheeseshop
+
+Pull requests welcome. :-)
