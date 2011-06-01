@@ -1,0 +1,9 @@
+A little utility for adjusting the timestamps in GPX files.
+
+RunKeeper is great for generating GPX logs of where you've been (eg, on a
+photowalk), but lies when it writes the timestamps.  It uses the local time,
+formatted in a way that asserts it was UTC.  But the next software down the line
+doesn't know that, trusts the UTC timestamps, and now you can't geotag your
+photos.
+
+This fixes that.
