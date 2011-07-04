@@ -19,9 +19,6 @@ Requires dateutil for convenience.
 
 Crappy things that I'm too lazy to fix right now:
 
- * hard-coded inputs
- * hard-coded outputs
- * hard-coded time adjustment (4 hours, UTC minus EDT)
  * no tests
  * not easy_install-able
  * not pip install-able
